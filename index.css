@@ -15,6 +15,7 @@ body {
   height: 100%;
   width: 100%;
 }
+
 .main {
   background-color: #c5bdb4;
   position: relative;
@@ -199,7 +200,7 @@ body {
 
 .ct-text-1 {
   width: 100%;
-  text-align: left;
+  text-align: center;
   font-family: canopee;
   font-size: 5.3vw;
   letter-spacing: 0.5vw;
@@ -209,7 +210,7 @@ body {
 
 .ct-text-2 {
   width: 100%;
-  text-align: left;
+  text-align: center;
   font-family: canopee;
   font-size: 5.3vw;
   letter-spacing: 0.5vw;
@@ -218,7 +219,7 @@ body {
 }
 .ct-text-3 {
   width: 100%;
-  text-align: left;
+  text-align: center;
   font-family: canopee;
   font-size: 5.3vw;
   letter-spacing: 0.5vw;
@@ -235,10 +236,11 @@ body {
   letter-spacing: 0.5vw;
   color: #cdc6be;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .footer {
-  background-color: #cdc6be;
+  background-color: #c5bdb4;
   width: 100%;
   overflow: hidden;
   padding: 15px 30px;
@@ -275,10 +277,12 @@ body {
     transform: translateX(calc(-100% - 2vw));
   }
 }
+
 .connect:hover > .connect-msg > .connect-msg-text {
   cursor: pointer;
   animation-play-state: paused;
 }
+
 @media (max-width: 560px) {
   .ct-text-3 {
     font-size: 5vw;
@@ -366,6 +370,33 @@ body {
   .ct-text-2,
   .ct-text-3 {
     font-size: 10vw;
-    background-color: bisque;
   }
+
+  .footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .email {
+    padding: 2.5px 5px;
+  }
+}
+.domain {
+  font-family: var(--domain);
+}
+#name {
+  padding: 10px 15px;
+}
+
+.projects-new {
+  background-color: #1d1d1b;
+}
+
+.projectName-text-new {
+  font-family: canopee;
+  text-transform: uppercase;
+  font-size: 25vw;
+  letter-spacing: 0.5vw;
+  color: #cdc6be;
+  text-align: center;
 }
