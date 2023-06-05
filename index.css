@@ -1,6 +1,9 @@
 @font-face {
   font-family: domain;
   src: url(./domain.ttf);
+  font-family: canopee;
+  src: url("https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/616fd1dd00cf6c70f978fc69_Canopee.woff2")
+    format("woff2");
 }
 
 * {
