@@ -1,0 +1,371 @@
+@font-face {
+  font-family: domain;
+  src: url(./domain.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --domain: domain;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  background-color: #c5bdb4;
+  position: relative;
+}
+
+.no-copy {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE/Edge */
+  user-select: none; /* Standard syntax */
+}
+
+.paper-background {
+  z-index: 998;
+  opacity: 0.3;
+  background-image: url(https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/614f353f1e11a6a7afdd8b74_6059a3e2b9ae6d2bd508685c_pt-texture-2.jpg);
+  background-position: 50%;
+  background-size: auto;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.nav-container {
+  display: flex;
+  width: 100%;
+  height: 10.8vh;
+  background-color: #cdc6be;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4vh 2vw;
+  transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+  align-items: center;
+  border-bottom: 1px solid #1d1d1b;
+}
+
+#nav-location {
+  font-family: "Rock Salt", cursive;
+}
+
+#nav-owner {
+  font-family: "Rock Salt", cursive;
+}
+
+.heroName {
+  display: flex;
+  justify-content: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  margin-top: 2%;
+}
+
+.name {
+  width: 96%;
+  background-color: #1d1d1b;
+}
+
+.name-text {
+  font-family: canopee;
+  color: #cdc6be;
+  font-size: 25vw;
+  letter-spacing: 0.5vw;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  padding: 15px 30px;
+  justify-content: space-between;
+}
+
+.content-one {
+  display: flex;
+  flex-direction: column;
+  padding-right: 3.5vw;
+  border-right: 1px solid #1d1d1b;
+}
+
+.co-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.co-name-1 {
+  font-family: canopee;
+  font-size: 8vw;
+  letter-spacing: 0.5vw;
+  color: #1d1d1b;
+  margin: 0px;
+  padding: 0px;
+}
+
+.co-name-2 {
+  font-family: canopee;
+  font-size: 6.5vw;
+  color: #1d1d1b;
+  letter-spacing: 0.4vw;
+  margin: 0px;
+  padding: 0px;
+}
+
+.co-name-3 {
+  font-family: canopee;
+  font-size: 6.5vw;
+  color: #1d1d1b;
+  letter-spacing: 0.4vw;
+  margin: 0px;
+  padding: 0px;
+}
+
+.co-image {
+  height: 34.5vw;
+  margin-top: 2vw;
+  overflow: hidden;
+}
+
+.co-image img {
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border: 1px solid #1d1d1b;
+}
+
+.co-text {
+  flex-shrink: 0;
+  width: 30vw;
+  margin-top: 2.5vw;
+}
+
+.has-dropcap {
+  font-size: 2.25vw;
+  line-height: 2.7vw;
+  text-align: justify;
+  font-weight: 300;
+  font-family: Editorial New, sans-serif;
+}
+
+.has-dropcap:first-letter {
+  font-family: "Canopee", sans-serif;
+  font-feature-settings: "ss03";
+  float: left;
+  font-size: 7vw;
+  line-height: 5vw;
+  margin: 0.7vw 1vw 1vw 0vw;
+  background-color: #1d1d1b;
+  color: #cdc6be;
+  padding: 0.75vw 0.4vw 0.5vw 0.5vw;
+}
+
+.content-two {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3vw;
+}
+
+.ct-image {
+  height: 40.2vw;
+  overflow: hidden;
+}
+
+.ct-image img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #1d1d1b;
+  object-fit: cover;
+}
+
+.ct-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+  flex-grow: 1;
+}
+
+.ct-text-1 {
+  width: 100%;
+  text-align: left;
+  font-family: canopee;
+  font-size: 5.3vw;
+  letter-spacing: 0.5vw;
+  color: #1d1d1b;
+  margin-bottom: 2vh;
+}
+
+.ct-text-2 {
+  width: 100%;
+  text-align: left;
+  font-family: canopee;
+  font-size: 5.3vw;
+  letter-spacing: 0.5vw;
+  color: #1d1d1b;
+  margin-bottom: 2vh;
+}
+.ct-text-3 {
+  width: 100%;
+  text-align: left;
+  font-family: canopee;
+  font-size: 5.3vw;
+  letter-spacing: 0.5vw;
+  color: #1d1d1b;
+}
+
+.projects {
+  background-color: #1d1d1b;
+}
+
+.projectName-text {
+  font-family: canopee;
+  font-size: 14vw;
+  letter-spacing: 0.5vw;
+  color: #cdc6be;
+  text-align: center;
+}
+
+.footer {
+  background-color: #cdc6be;
+  width: 100%;
+  overflow: hidden;
+  padding: 15px 30px;
+}
+.connect {
+  display: flex;
+  white-space: nowrap;
+  border-top: 1px solid #1d1d1b;
+  border-bottom: 1px solid #1d1d1b;
+  overflow: hidden;
+}
+.connect-msg {
+  margin-right: 2vw;
+}
+.connect-msg-text {
+  font-family: Editorial New, sans-serif;
+  font-size: 5vw;
+  line-height: 8vw;
+  font-weight: 300;
+  animation: emailScroll 5s linear infinite;
+}
+.email {
+  font-family: canopee;
+  background-color: #1d1d1b;
+  color: #cdc6be;
+  padding: 5px 10px;
+}
+
+@keyframes emailScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 2vw));
+  }
+}
+.connect:hover > .connect-msg > .connect-msg-text {
+  cursor: pointer;
+  animation-play-state: paused;
+}
+@media (max-width: 560px) {
+  .ct-text-3 {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 498px) {
+  .ct-text-1 {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    width: 93%;
+  }
+  .name-text {
+    letter-spacing: 0.3vw;
+  }
+  .content {
+    flex-direction: column-reverse;
+    gap: 5vh;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0px;
+  }
+  .content-one {
+    padding-right: 0px;
+    border-right: none;
+  }
+  .co-image {
+    width: 100%;
+    height: 35vh;
+  }
+  .co-image img {
+    width: 100%;
+  }
+  .co-name-1 {
+    font-size: 25vw;
+    letter-spacing: 1.6vw;
+  }
+
+  .co-name-2 {
+    font-size: 20vw;
+    letter-spacing: 1.4vw;
+  }
+
+  .co-name-3 {
+    font-size: 20vw;
+    letter-spacing: 1.6vw;
+  }
+
+  .co-text {
+    width: 100%;
+    margin-top: 2vh;
+  }
+
+  .has-dropcap {
+    font-size: 5vw;
+    line-height: 7.5vw;
+    letter-spacing: -0.02em;
+  }
+
+  .has-dropcap:first-letter {
+    font-size: 20vw;
+    line-height: 17vw;
+    margin: 1vw 2vw 1vw 0vw;
+    padding: 1.5vw 0.8vw 0.5vw 1vw;
+  }
+
+  .content-two {
+    padding-left: 0px;
+  }
+
+  .ct-image {
+    width: 100%;
+    height: 35vh;
+  }
+
+  .ct-image img {
+    width: 100%;
+  }
+
+  .ct-text-1,
+  .ct-text-2,
+  .ct-text-3 {
+    font-size: 10vw;
+    background-color: bisque;
+  }
+}
