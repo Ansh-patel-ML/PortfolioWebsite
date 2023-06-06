@@ -10,46 +10,39 @@ gsap.from([".nav", ".heroName", ".content"], {
   ease: "power2.inOut",
 });
 
-const elementToRemove = document.getElementsByClassName("content");
-const elementToAppend = document.getElementsByClassName("projects");
-const whereToAppend = document.getElementById("name");
-const element = `<div class="projects-new"><h4 class="projectName-text-new">Pr<span class="domain">o</span>je<span class="domain">c</span>ts</h4></div>`;
-const oldElement = `
+const contentToRemove = document.getElementsByClassName("content")[0];
+const projectsElement = document.getElementsByClassName("projects")[0];
+const nameContainer = document.getElementById("name");
+const newProjectsElement = `<div class="projects-new"><h4 class="projectName-text-new">Projects</h4></div>`;
+const oldProjectsElement = `
 <div class="projects">
-    <h4 class="projectName-text">Pr<span class="domain">o</span>je<span class="domain">c</span>ts</h4></h4>
+    <h4 class="projectName-text">Projects</h4>
 </div>
 `;
 
 function handleScreenSize() {
   if (window.innerWidth <= 480) {
-    console.log("removing element");
-    if (elementToRemove[0].children["1"].children.length === 3) {
-      elementToRemove[0].children["1"].removeChild(elementToAppend[0]);
-      whereToAppend.innerHTML = element;
+    console.log("Removing element");
+    if (contentToRemove.children[1].children.length === 3) {
+      contentToRemove.children[1].removeChild(projectsElement);
+      nameContainer.innerHTML = newProjectsElement;
     }
   } else {
-    console.log("adding element");
-    if (elementToRemove[0].children["1"].children.length === 2) {
-      document.getElementsByClassName("content-two")[0].innerHTML += oldElement;
-      whereToAppend.innerHTML = "";
+    console.log("Adding element");
+    if (contentToRemove.children[1].children.length === 2) {
+      document.getElementsByClassName("content-two")[0].innerHTML +=
+        oldProjectsElement;
+      nameContainer.innerHTML = "";
     }
   }
 }
-
-// Add event listener for screen size changes
-window.addEventListener("resize", handleScreenSize);
-
-// Initial execution of the function on page load
-handleScreenSize();
-
-const mobileMasquee = document.getElementsByClassName("connect")[0];
 
 function toggleHover() {
-  if (mobileMasquee.classList.contains("hover")) {
-    mobileMasquee.classList.remove("hover");
-  } else {
-    mobileMasquee.classList.toggle("hover");
-  }
+  mobileMasquee.classList.toggle("hover");
 }
 
+const mobileMasquee = document.getElementsByClassName("connect")[0];
 mobileMasquee.addEventListener("click", toggleHover);
+
+window.addEventListener("resize", handleScreenSize);
+handleScreenSize();

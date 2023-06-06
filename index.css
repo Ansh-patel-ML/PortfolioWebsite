@@ -22,13 +22,11 @@ body {
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: none;
   text-size-adjust: none;
-  /* overflow: hidden; */
 }
 
 .main {
   background-color: #c5bdb4;
   position: relative;
-  /* overflow: hidden; */
 }
 
 .no-copy {
@@ -201,7 +199,7 @@ body {
 .ct-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-top: 2svh;
   flex-grow: 1;
@@ -209,29 +207,38 @@ body {
 
 .ct-text-1 {
   width: 100%;
-  text-align: center;
+  text-align: left;
   font-family: canopee;
   font-size: 5.3svw;
-  letter-spacing: 0.5svw;
+  letter-spacing: -0.1svw;
   color: #1d1d1b;
+  padding-top: 0.5vw;
+  font-weight: 400;
+  border-bottom: 2px solid rgba(29, 29, 27, 0.3);
 }
 
 .ct-text-2 {
   width: 100%;
-  text-align: center;
+  text-align: left;
   font-family: canopee;
   font-size: 5.3svw;
-  letter-spacing: 0.5svw;
+  letter-spacing: -0.1svw;
   color: #1d1d1b;
+  padding-top: 0.5vw;
+  font-weight: 400;
+  border-bottom: 2px solid rgba(29, 29, 27, 0.3);
 }
 
 .ct-text-3 {
   width: 100%;
-  text-align: center;
+  text-align: left;
   font-family: canopee;
   font-size: 5.3svw;
-  letter-spacing: 0.5svw;
+  letter-spacing: -0.1svw;
   color: #1d1d1b;
+  padding-top: 0.5vw;
+  font-weight: 400;
+  border-bottom: 2px solid rgba(29, 29, 27, 0.3);
 }
 
 .projects {
