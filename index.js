@@ -6,7 +6,6 @@ const scroll = new LocomotiveScroll({
 gsap.from([".nav", ".heroName", ".content"], {
   x: "250vh",
   duration: 1,
-  //   delay: 0.5,
   stagger: 0.25,
   ease: "power2.inOut",
 });
@@ -43,12 +42,10 @@ window.addEventListener("resize", handleScreenSize);
 // Initial execution of the function on page load
 handleScreenSize();
 
-const mobileMasquee = document.querySelector(".connect");
+const mobileMasquee = document.getElementsByClassName("connect")[0];
 
-mobileMasquee.addEventListener("touchstart", function () {
-  mobileMasquee.classList.add("hovered");
-});
+function toggleHover() {
+  mobileMasquee.classList.toggle("hover");
+}
 
-mobileMasquee.addEventListener("touchend", function () {
-  mobileMasquee.classList.remove("hovered");
-});
+mobileMasquee.addEventListener("click", toggleHover);
