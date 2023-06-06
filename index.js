@@ -42,3 +42,13 @@ window.addEventListener("resize", handleScreenSize);
 
 // Initial execution of the function on page load
 handleScreenSize();
+
+const mobileMasquee = document.querySelector(".connect");
+
+mobileMasquee.addEventListener("touchstart", function () {
+  mobileMasquee.classList.add("hovered");
+});
+
+mobileMasquee.addEventListener("touchend", function () {
+  mobileMasquee.classList.remove("hovered");
+});

@@ -1,5 +1,5 @@
 @font-face {
-  font-family: domain;
+  font-family: DomaineDispCondMedium;
   src: url("https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/5f242a69b1577e63266b4d72_DomaineDispCondMedium.woff2")
     format("woff2");
   font-family: canopee;
@@ -11,7 +11,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --domain: domain;
 }
 
 html,
@@ -20,6 +19,7 @@ body {
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: none;
   text-size-adjust: none;
+  overflow: auto;
 }
 
 .main {
@@ -267,7 +267,7 @@ body {
   font-size: 5svw;
   line-height: 8svw;
   font-weight: 300;
-  animation: emailScroll 5s linear infinite;
+  animation: emailScroll 3s linear infinite;
 }
 .email {
   font-family: canopee;
@@ -286,8 +286,11 @@ body {
 }
 
 .connect:hover > .connect-msg > .connect-msg-text {
-  cursor: pointer;
   animation-play-state: paused;
+}
+
+.connect:hover > .connect-msg > .connect-msg-text > .email {
+  cursor: pointer;
 }
 
 @media (max-width: 560px) {
@@ -380,7 +383,16 @@ body {
     padding-left: 15px;
     padding-right: 15px;
   }
-
+  .connect-msg {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .connect-msg-text {
+    font-size: 10svw;
+    line-height: 8svw;
+  }
   .email {
     padding: 2.5px 5px;
   }
