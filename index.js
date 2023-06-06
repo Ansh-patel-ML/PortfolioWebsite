@@ -45,7 +45,11 @@ handleScreenSize();
 const mobileMasquee = document.getElementsByClassName("connect")[0];
 
 function toggleHover() {
-  mobileMasquee.classList.toggle("hover");
+  if (mobileMasquee.classList.contains("hover")) {
+    mobileMasquee.classList.remove("hover");
+  } else {
+    mobileMasquee.classList.toggle("hover");
+  }
 }
 
 mobileMasquee.addEventListener("click", toggleHover);
