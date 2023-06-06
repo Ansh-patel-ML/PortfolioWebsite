@@ -1,7 +1,7 @@
-// const scroll = new LocomotiveScroll({
-//   el: document.querySelector(".main"),
-//   smooth: true,
-// });
+const scroll = new LocomotiveScroll({
+  el: document.querySelector(".main"),
+  smooth: true,
+});
 
 // gsap.from([".nav", ".heroName", ".content"], {
 //   x: "250vh",
