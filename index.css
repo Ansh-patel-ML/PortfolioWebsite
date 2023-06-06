@@ -24,7 +24,7 @@ body {
 .main {
   background-color: #c5bdb4;
   position: relative;
-  overflow: hidden;
+  /* overflow-x: hidden; */
 }
 
 .no-copy {
