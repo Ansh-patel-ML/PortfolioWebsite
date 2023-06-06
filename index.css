@@ -15,8 +15,6 @@
 
 html,
 body {
-  height: 100%;
-  width: 100%;
   -webkit-text-size-adjust: none;
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: none;
@@ -51,11 +49,10 @@ body {
 .nav-container {
   display: flex;
   width: 100%;
-  height: 10.8vh;
   background-color: #cdc6be;
   flex-direction: row;
   justify-content: space-between;
-  padding: 4vh 2vw;
+  padding: 1rem 1rem;
   transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
   align-items: center;
   border-bottom: 1px solid #1d1d1b;
@@ -72,8 +69,8 @@ body {
 .heroName {
   display: flex;
   justify-content: center;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
+  padding-top: 2svh;
+  padding-bottom: 2svh;
   margin-top: 2%;
 }
 
@@ -85,8 +82,8 @@ body {
 .name-text {
   font-family: canopee;
   color: #cdc6be;
-  font-size: 25vw;
-  letter-spacing: 0.5vw;
+  font-size: 25svw;
+  letter-spacing: 0.5svw;
   text-align: center;
 }
 
@@ -99,7 +96,7 @@ body {
 .content-one {
   display: flex;
   flex-direction: column;
-  padding-right: 3.5vw;
+  padding-right: 3.5svw;
   border-right: 1px solid #1d1d1b;
 }
 
@@ -112,8 +109,8 @@ body {
 
 .co-name-1 {
   font-family: canopee;
-  font-size: 8vw;
-  letter-spacing: 0.5vw;
+  font-size: 8svw;
+  letter-spacing: 0.5svw;
   color: #1d1d1b;
   margin: 0px;
   padding: 0px;
@@ -121,25 +118,25 @@ body {
 
 .co-name-2 {
   font-family: canopee;
-  font-size: 6.5vw;
+  font-size: 6.5svw;
   color: #1d1d1b;
-  letter-spacing: 0.4vw;
+  letter-spacing: 0.4svw;
   margin: 0px;
   padding: 0px;
 }
 
 .co-name-3 {
   font-family: canopee;
-  font-size: 6.5vw;
+  font-size: 6.5svw;
   color: #1d1d1b;
-  letter-spacing: 0.4vw;
+  letter-spacing: 0.4svw;
   margin: 0px;
   padding: 0px;
 }
 
 .co-image {
-  height: 34.5vw;
-  margin-top: 2vw;
+  height: 34.5svw;
+  margin-top: 2svw;
   overflow: hidden;
 }
 
@@ -154,13 +151,13 @@ body {
 
 .co-text {
   flex-shrink: 0;
-  width: 30vw;
-  margin-top: 2.5vw;
+  width: 30svw;
+  margin-top: 2.5svw;
 }
 
 .has-dropcap {
-  font-size: 2.25vw;
-  line-height: 2.7vw;
+  font-size: 2.25svw;
+  line-height: 2.7svw;
   text-align: justify;
   font-weight: 300;
   font-family: Editorial New, sans-serif;
@@ -170,22 +167,22 @@ body {
   font-family: "Canopee", sans-serif;
   font-feature-settings: "ss03";
   float: left;
-  font-size: 7vw;
-  line-height: 5vw;
-  margin: 0.7vw 1vw 1vw 0vw;
+  font-size: 7svw;
+  line-height: 5svw;
+  margin: 0.7svw 1svw 1svw 0svw;
   background-color: #1d1d1b;
   color: #cdc6be;
-  padding: 0.75vw 0.4vw 0.5vw 0.5vw;
+  padding: 0.75svw 0.4svw 0.5svw 0.5svw;
 }
 
 .content-two {
   display: flex;
   flex-direction: column;
-  padding-left: 3vw;
+  padding-left: 3svw;
 }
 
 .ct-image {
-  height: 40.2vw;
+  height: 40.2svw;
   overflow: hidden;
 }
 
@@ -201,7 +198,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 2vh;
+  margin-top: 2svh;
   flex-grow: 1;
 }
 
@@ -209,27 +206,28 @@ body {
   width: 100%;
   text-align: center;
   font-family: canopee;
-  font-size: 5.3vw;
-  letter-spacing: 0.5vw;
+  font-size: 5.3svw;
+  letter-spacing: 0.5svw;
   color: #1d1d1b;
-  margin-bottom: 2vh;
+  margin-bottom: 2svh;
 }
 
 .ct-text-2 {
   width: 100%;
   text-align: center;
   font-family: canopee;
-  font-size: 5.3vw;
-  letter-spacing: 0.5vw;
+  font-size: 5.3svw;
+  letter-spacing: 0.5svw;
   color: #1d1d1b;
-  margin-bottom: 2vh;
+  margin-bottom: 2svh;
 }
+
 .ct-text-3 {
   width: 100%;
   text-align: center;
   font-family: canopee;
-  font-size: 5.3vw;
-  letter-spacing: 0.5vw;
+  font-size: 5.3svw;
+  letter-spacing: 0.5svw;
   color: #1d1d1b;
 }
 
@@ -239,8 +237,8 @@ body {
 
 .projectName-text {
   font-family: canopee;
-  font-size: 14vw;
-  letter-spacing: 0.5vw;
+  font-size: 14svw;
+  letter-spacing: 0.5svw;
   color: #cdc6be;
   text-align: center;
   text-transform: uppercase;
@@ -252,6 +250,7 @@ body {
   overflow: hidden;
   padding: 15px 30px;
 }
+
 .connect {
   display: flex;
   white-space: nowrap;
@@ -259,13 +258,15 @@ body {
   border-bottom: 1px solid #1d1d1b;
   overflow: hidden;
 }
+
 .connect-msg {
-  margin-right: 2vw;
+  margin-right: 2svw;
 }
+
 .connect-msg-text {
   font-family: Editorial New, sans-serif;
-  font-size: 5vw;
-  line-height: 8vw;
+  font-size: 5svw;
+  line-height: 8svw;
   font-weight: 300;
   animation: emailScroll 5s linear infinite;
 }
@@ -281,7 +282,7 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-100% - 2vw));
+    transform: translateX(calc(-100% - 2svw));
   }
 }
 
@@ -292,13 +293,13 @@ body {
 
 @media (max-width: 560px) {
   .ct-text-3 {
-    font-size: 5vw;
+    font-size: 5svw;
   }
 }
 
 @media (max-width: 498px) {
   .ct-text-1 {
-    font-size: 5vw;
+    font-size: 5svw;
   }
 }
 
@@ -307,11 +308,11 @@ body {
     width: 93%;
   }
   .name-text {
-    letter-spacing: 0.3vw;
+    letter-spacing: 0svw;
   }
   .content {
     flex-direction: column-reverse;
-    gap: 5vh;
+    gap: 5svh;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 0px;
@@ -322,63 +323,53 @@ body {
   }
   .co-image {
     width: 100%;
-    height: 35vh;
+    height: 35svh;
   }
   .co-image img {
     width: 100%;
   }
   .co-name-1 {
-    font-size: 25vw;
-    letter-spacing: 1.6vw;
+    font-size: 25svw;
+    letter-spacing: 1.6svw;
   }
-
   .co-name-2 {
-    font-size: 20vw;
-    letter-spacing: 1.4vw;
+    font-size: 20svw;
+    letter-spacing: 1.4svw;
   }
-
   .co-name-3 {
-    font-size: 20vw;
-    letter-spacing: 1.6vw;
+    font-size: 20svw;
+    letter-spacing: 1.6svw;
   }
-
   .co-text {
     width: 100%;
-    margin-top: 2vh;
+    margin-top: 2svh;
   }
-
   .has-dropcap {
-    font-size: 5vw;
-    line-height: 7.5vw;
+    font-size: 5svw;
+    line-height: 7.5svw;
     letter-spacing: -0.02em;
   }
-
   .has-dropcap:first-letter {
-    font-size: 20vw;
-    line-height: 17vw;
-    margin: 1vw 2vw 1vw 0vw;
-    padding: 1.5vw 0.8vw 0.5vw 1vw;
+    font-size: 20svw;
+    line-height: 17svw;
+    margin: 1svw 2svw 1svw 0svw;
+    padding: 1.5svw 0.8svw 0.5svw 1svw;
   }
-
   .content-two {
     padding-left: 0px;
   }
-
   .ct-image {
     width: 100%;
-    height: 35vh;
+    height: 35svh;
   }
-
   .ct-image img {
     width: 100%;
   }
-
   .ct-text-1,
   .ct-text-2,
   .ct-text-3 {
-    font-size: 10vw;
+    font-size: 10svw;
   }
-
   .footer {
     padding-left: 15px;
     padding-right: 15px;
@@ -402,8 +393,7 @@ body {
 .projectName-text-new {
   font-family: canopee;
   text-transform: uppercase;
-  font-size: 25vw;
-  letter-spacing: 0.5vw;
+  font-size: 25svw;
   color: #cdc6be;
   text-align: center;
 }
