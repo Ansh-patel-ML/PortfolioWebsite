@@ -1,6 +1,7 @@
 @font-face {
   font-family: domain;
-  src: url(./domain.ttf);
+  src: url("https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/5f242a69b1577e63266b4d72_DomaineDispCondMedium.woff2")
+    format("woff2");
   font-family: canopee;
   src: url("https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/616fd1dd00cf6c70f978fc69_Canopee.woff2")
     format("woff2");
@@ -209,7 +210,6 @@ body {
   font-size: 5.3svw;
   letter-spacing: 0.5svw;
   color: #1d1d1b;
-  margin-bottom: 2svh;
 }
 
 .ct-text-2 {
@@ -219,7 +219,6 @@ body {
   font-size: 5.3svw;
   letter-spacing: 0.5svw;
   color: #1d1d1b;
-  margin-bottom: 2svh;
 }
 
 .ct-text-3 {
@@ -369,8 +368,13 @@ body {
   .ct-text-1,
   .ct-text-2,
   .ct-text-3 {
-    font-size: 10svw;
-    letter-spacing: 0px;
+    font-size: 13.2svw;
+    line-height: 11vw;
+    letter-spacing: -2px;
+    padding-top: 1vw;
+    text-align: left;
+    font-weight: 400;
+    border-bottom: 2px solid rgba(29, 29, 27, 0.3);
   }
   .footer {
     padding-left: 15px;
@@ -382,7 +386,9 @@ body {
   }
 }
 .domain {
-  font-family: var(--domain);
+  letter-spacing: -0.02em;
+  font-family: Domaine Display, sans-serif;
+  font-weight: 500;
 }
 #name {
   padding: 10px 15px;
